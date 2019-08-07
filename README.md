@@ -1,4 +1,4 @@
-# ninja-smoothies
+# ninja-members
 
 > A Vue.js project
 
