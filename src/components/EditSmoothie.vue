@@ -37,6 +37,7 @@
                 slug: null
             }
         },
+
         methods: {
             editSmoothie() {
                 if (this.smoothie.title) {
@@ -60,8 +61,8 @@
                 } else {
                     this.feedback = 'You must enter a smoothie title'
                 }
-
             },
+
             addIng() {
                 if (this.another) {
                     this.smoothie.ingredients.push(this.another)
@@ -77,6 +78,7 @@
                 })
             }
         },
+        
         created() {
             let ref = db.collection('smoothies').where('slug', '==', this.$route.params.smoothie_slug)
             ref.get().then(snapshot => {

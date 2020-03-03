@@ -38,6 +38,7 @@
                 slug: null
             }
         },
+
         methods: {
             addSmoothie() {
                 if (this.title) {
@@ -62,6 +63,7 @@
                     this.feedback = 'You must enter a smoothie title'
                 }
             },
+
             addIng() {
                 if (this.another) {
                     this.ingredients.push(this.another)
@@ -71,6 +73,7 @@
                     this.feedback = 'You must enter a value to add another ingredient'
                 }
             },
+            
             deleteIng(ing) {
                 this.ingredients = this.ingredients.filter(ingredient => {
                     return ingredient != ing
